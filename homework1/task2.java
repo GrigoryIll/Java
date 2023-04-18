@@ -29,7 +29,5 @@ public class task2
         }
         numbers.removeAll(numbers2);
         System.out.print(numbers + " ");
-        System.out.println();
-        System.out.print(numbers.size());
     }
 }
