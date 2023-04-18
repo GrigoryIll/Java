@@ -9,30 +9,37 @@ public class task3
     {
         Scanner scanner = new Scanner (System.in);
         System.out.printf("Введите первое число:\n");
-        int numberA = scanner.nextInt();
+        double numberA = scanner.nextDouble();
         System.out.printf("Введите второе число:\n");
-        int numberB = scanner.nextInt();
+        double numberB = scanner.nextDouble();
         System.out.printf("Что нужно сделать?:\n 1 - сложить первое число на второе\n 2 - вычесть \n 3 - умножить\n 4 - поделить\n");
-        int number = scanner.nextInt();
+        double number = scanner.nextDouble();
         if (number == 1)
         {
-            int res = numberA + numberB;
-            System.out.printf("Результат: %d", res);
+            double res = numberA + numberB;
+            System.out.printf("Результат: %f", res);
         }
         if (number == 2)
         {
-            int res = numberA - numberB;
-            System.out.printf("Результат: %d", res);
+            double res = numberA - numberB;
+            System.out.printf("Результат: %f", res);
         }
         if (number == 3)
         {
-            int res = numberA * numberB;
-            System.out.printf("Результат: %d", res);
+            double res = numberA * numberB;
+            System.out.printf("Результат: %f", res);
         }
         if (number == 4)
         {
-            int res = numberA / numberB;
-            System.out.printf("Результат: %d", res);
+            if (numberB == 0)
+            {
+                System.out.printf("Делить на ноль не имеет смысла, введите другое число");
+            }
+            else
+            {
+                double res = numberA / numberB;
+                System.out.printf("Результат: %f", res);
+            }
         }
     }
 }
