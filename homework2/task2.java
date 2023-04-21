@@ -24,7 +24,7 @@ public class task2
                     arr[j+1] = tmp;
                 }
             }
-        logger.log(Level.INFO,"Промежуточный результат на " + (i+1) + " итерации:" + Arrays.toString(arr));  
+        logger.log(Level.INFO,"Результат на " + (i+1) + " итерации: " + Arrays.toString(arr));  
         }
     System.out.print(Arrays.toString(arr));
     }   
