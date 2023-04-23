@@ -1,3 +1,5 @@
+// Реализовать алгоритм сортировки слиянием.
+
 package homework3;
 
 import java.util.Arrays;
