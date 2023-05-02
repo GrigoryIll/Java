@@ -7,14 +7,12 @@ public class task3
     public static void main(String[] args) 
     {
         int arr[] = {8, 6, 9, 5, 1};
-        int len = arr.length;
-        task3 sor = new task3();
-        sor.sort(arr);
+        sort(arr);
         System.out.println("После сортировки:");
         printArray(arr);
     }
 
-    public void sort(int arr[])
+    public static void sort(int arr[])
     {
         int len = arr.length;
         for (int i = len / 2 - 1; i >= 0; i--)
@@ -31,8 +29,8 @@ public class task3
         }
     }
 
-    public void heapify(int arr[], int len, int i)
-    {
+    public static void heapify(int arr[], int len, int i)
+    {   
         int largest = i;
         int l = 2 * i + 1;
         int r = 2 * i + 2;
