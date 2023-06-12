@@ -24,6 +24,7 @@ public class TableModel implements Model {
             tables.add(new Table());
             tables.add(new Table());
             tables.add(new Table());
+            tables.add(new Table());
         }
         return tables;
     }
@@ -50,8 +51,18 @@ public class TableModel implements Model {
      * Поменять бронь столика
      * @return
      */
-    public int changeReservationTable(){
-        return 0;
+    public int changeReservationTable(int oldReservation, Date reservationDate, int tableNo, String name){
+        for (Table table : tables) {
+            for (Reservation reservation : table.getReservations())
+            {
+                if (reservation.getId() == oldReservation)
+                {
+                    table.getReservations().remove(reservation);
+                    return reservationTable(reservationDate, tableNo, name);
+                }                            
+            }
+        }
+        return -1;
         //TODO: Для создания нового резерва столика стоит воспользоваться уже
         // существующим методом reservationTable
     }

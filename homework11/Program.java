@@ -6,6 +6,8 @@ import homework11.views.BookingView;
 
 import java.util.Date;
 
+import javax.annotation.processing.SupportedOptions;
+
 public class Program {
 
     /**
@@ -19,9 +21,9 @@ public class Program {
         TableModel tableModel = new TableModel();
         BookingPresenter bookingPresenter = new BookingPresenter(bookingView, tableModel);
         bookingPresenter.showTables();
-        bookingView.reservationTableEvent(new Date(), 103, "Станислав");
-
-        //bookingView.changeReservationTable();
+        bookingView.reservationTableEvent(new Date(), 101, "Станислав");
+        bookingView.changeReservationTableEvent(1001, new Date(), 102, "Станислав");
+        
     }
 
 }

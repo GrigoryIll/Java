@@ -21,6 +21,14 @@ public class Reservation {
     public String getName() {
         return name;
     }
+    
+    public void setDate(Date date) {
+        this.date = date;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
 
     {
         id = ++counter;

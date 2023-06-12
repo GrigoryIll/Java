@@ -33,4 +33,11 @@ public class BookingPresenter implements ViewObserver {
         int reservationNo = tableModel.reservationTable(orderDate, tableNo, name);
         showReservationTableResult(reservationNo);
     }
+    
+
+    @Override
+    public void onChangeReservationTable(int oldReservation, Date orderDate, int tableNo, String name) {
+    int reservationNo = tableModel.reservationTable(orderDate, tableNo, name);
+    showReservationTableResult(reservationNo);
+}
 }
