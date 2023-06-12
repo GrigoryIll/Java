@@ -51,4 +51,9 @@ public class BookingView implements View {
         observer.onChangeReservationTable(oldReservation, reservationDate, tableNo, name);
     }
 
+    @Override
+    public void changeReservationTable(int oldReservation, java.sql.Date reservationDate, int tableNo, String name) {
+        observer.onChangeReservationTable(oldReservation, reservationDate, tableNo, name);
+    }
+
 }
