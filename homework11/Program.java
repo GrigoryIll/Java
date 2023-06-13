@@ -22,7 +22,7 @@ public class Program {
         BookingPresenter bookingPresenter = new BookingPresenter(bookingView, tableModel);
         bookingPresenter.showTables();
         bookingView.reservationTableEvent(new Date(), 101, "Станислав");
-        bookingView.changeReservationTableEvent(1001, new Date(), 102, "Станислав");
+        bookingView.changeReservationTableEvent(9001, new Date(), 102, "Станислав");
         
     }
 
