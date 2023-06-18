@@ -11,14 +11,8 @@ public class Program
      */
     public static void main(String[] args) 
     {
-        InfoFromConsole console = new InfoFromConsole();
-        System.out.println("Order:");
-        String clientName = console.prompt("Client name: ");
-        String product = console.prompt("Product: ");
-        int qnt = console.promptInt("Quantity: ");
-        int price = console.promptInt("Price: ");
-        Order order = new Order(clientName, product, qnt, price);
-        order.saveToJson();
-        
+        Order order = new Order();
+        InfoFromConsole.inputConsole(order);
+        OrderSaver.saveToJson(order);      
     }
 }
