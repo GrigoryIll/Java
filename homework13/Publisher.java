@@ -1,0 +1,13 @@
+package homework13;
+
+import homework13.Vacancy.VacancyType;
+
+public interface Publisher {
+
+    void registerObserver(Observer observer);
+
+    void removeObserver(Observer observer);
+
+    void sendOffer(String nameCompany, double salary, VacancyType vacancyType);
+
+}
